@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vite App</title>
+  <script type="module" src="/src/main.ts"></script>
+</head>
+
+<body>
+  <form id="input-form">
+    <div>
+      <label for="arg-n">N:</label>
+      <input type="number" id="arg-n" name="n" min="2" required value="2">
+    </div>
+    <div>
+      <label for="arg-r-l">r:</label>
+      <input type="number" id="arg-r-l" name="r-l" min="1" required value="1">
+      <label for="arg-r-d">/</label>
+      <input type="number" id="arg-r-d" name="r-d" min="1" required value="3">
+    </div>
+    <div>
+      <label for="arg-i">迭代次数：</label>
+      <input type="number" id="arg-i" name="i" min="0" required value="4">
+    </div>
+    <div>
+      <input type="checkbox" id="opt-auto" name="auto" checked>
+      <label for="opt-auto">实时渲染</label>
+    </div>
+    <div>
+      <input type="checkbox" id="opt-animate" name="animate" checked>
+      <label for="opt-animate">启用动画</label>
+    </div>
+    <div>
+      <input type="submit" value="重建网格" />
+    </div>
+  </form>
+  <p id="output-info">（正在加载中）</p>
+</body>
+
+</html>
