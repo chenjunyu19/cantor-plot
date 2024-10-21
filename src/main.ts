@@ -22,7 +22,7 @@ let intervalId: number;
 
 /**
  * 计算康托尔分形集
- * @param n N 分集
+ * @param n N
  * @param r 相似比 (0 < r < 0.5)
  */
 function cantor(n: number, r: number): ContorItem[] {
@@ -38,7 +38,7 @@ function cantor(n: number, r: number): ContorItem[] {
 
 /**
  * 计算康托尔分形集第 i 次迭代后的结果
- * @param n N 分集
+ * @param n N
  * @param r 相似比 (0 < r < 0.5)
  * @param i 迭代次数
  */
@@ -64,7 +64,7 @@ function cantorIteration(n: number, r: number, i: number): ContorItem[] {
 
 /**
  * 绘制康托尔分形集
- * @param n N 分集
+ * @param n N
  * @param r 相似比 (0 < r < 0.5)
  * @param i 迭代次数
  */
